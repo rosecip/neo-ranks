@@ -10,6 +10,7 @@ import TopBar from "./layout/TopBar";
 import MemberList from "./MemberList";
 import UnitList from "./UnitList";
 import SongList from "./SongList";
+import AlbumList from "./AlbumList";
 
 const App = (props) => {
   const [currentUser, setCurrentUser] = useState(undefined);
@@ -33,6 +34,7 @@ const App = (props) => {
         <Route exact path="/members" component={MemberList} />
         <Route exact path="/songs" component={SongList} />
         <Route exact path="/units" component={UnitList} />
+        <Route exact path="/albums" component={AlbumList} />
         <Route exact path="/users/new" component={RegistrationForm} />
         <Route exact path="/user-sessions/new" component={SignInForm} />
       </Switch>
