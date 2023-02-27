@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import UnitTile from "./UnitTile"
+import { Link } from "react-router-dom"
 
 const UnitList = (props) => {
   const [units, setUnits] = useState([])
@@ -33,6 +34,10 @@ const UnitList = (props) => {
 
   return (
     <div>
+      <h1>units</h1>
+      <Link to="/">
+        home
+      </Link>
       <ul>
       {unitList}
       </ul>

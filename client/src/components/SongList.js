@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SongTile from "./SongTile"
+import { Link } from "react-router-dom"
 
 const SongList = () => {
   const [songs, setSongs] = useState([])
@@ -32,6 +33,10 @@ const SongList = () => {
 
   return (
     <div>
+      <h1>songs</h1>
+      <Link to="/">
+        home
+      </Link>
       <ul>
         {songList}
       </ul>
