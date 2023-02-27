@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import MemberTile from "./MemberTile"
+import { Link } from "react-router-dom"
 
 const MemberList = () => {
   const [members, setMembers] = useState([])
@@ -33,6 +34,10 @@ const MemberList = () => {
 
   return (
     <div>
+      <h1>members</h1>
+      <Link to="/">
+        home
+      </Link>
       <ul>
       {memberList}
       </ul>

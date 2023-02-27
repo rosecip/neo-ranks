@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import AlbumTile from "./AlbumTile"
+import { Link } from "react-router-dom"
 
 const AlbumList = (props) => {
   const [albums, setAlbums] = useState([])
@@ -33,6 +34,10 @@ const AlbumList = (props) => {
 
   return (
     <div>
+      <h1>albums</h1>
+      <Link to="/">
+        home
+      </Link>
       <ul>
         {albumsList}
       </ul>
